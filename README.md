@@ -31,9 +31,15 @@ After running this command, key will be created by set path and you will see pub
 
 To continue, let's set `USER_KEY_PATH` environment variable that contains path to owner key
 `export USER_KEY_PATH=owner.key`
+
+Also, you need to add owner's public key as identifier for your robot network
+`export OWNER_KEY=<Public Key From Two Step Before>`
+
 ## Create configuration for robots network
-==To publish config, you should firstly run agent on your machine and set path to socket(same folder as an agent by default).==
-==`export AGENT_SOCKET_PATH=rn.socket`==
+To publish config, you should firstly add address of RPC node through which you will communicate with network
+`export AGENT_RPC=<YOUR NODE ADDRESS>`.
+
+For example, you could use Otaberu's node `/ip4/104.131.170.157/tcp/8765`.
 
 We use cli's TUI to configure a list of robots:
 `rn tui config robots.json`
