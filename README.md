@@ -18,7 +18,7 @@ And make executable:
 `chmod +x robot-agent`
 
 ## Install rn-cli
-`pipx install rn-cli --upgrade`
+`pipx install rn-cli`
 
 ## Create owner key
 We create a keypair for an organization owner.  Public key will be place to all agents while startup. Secret key is used to sign messages for the Robot Network.
@@ -39,7 +39,7 @@ Also, you need to add owner's public key as identifier for your robot network
 To publish config, you should firstly add address of RPC node through which you will communicate with network
 `export AGENT_RPC=<YOUR NODE ADDRESS>`.
 
-For example, you could use Otaberu's node `/ip4/104.131.170.157/tcp/8765`.
+For example, you could use Otaberu's node `ws://104.131.170.157:8888`.
 
 We use cli's TUI to configure a list of robots:
 `rn tui config robots.json`
@@ -69,6 +69,9 @@ To start agent use:
 | --bootstrap-addr (-b)  | multiaddress of bootstrap node         |           |
 | --secret-key (-s)      | secret key in base64 to use on startup |           |
 | --owner (-0)           | base64 public key of the owner         |           |
+
+To connect via our bootstrap node (not locally), use `--bootstrap-addr /ip4/104.131.170.157/tcp/8765`
+
 ## See robots list
 To see robots in network we use cli command
 `rn robots list`
