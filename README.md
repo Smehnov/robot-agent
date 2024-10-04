@@ -18,7 +18,7 @@ And make executable:
 `chmod +x robot-agent`
 
 ## Install rn-cli
-`pip3 install rn-cli --upgrade`
+`pipx install rn-cli --upgrade`
 
 ## Create owner key
 We create a keypair for an organization owner.  Public key will be place to all agents while startup. Secret key is used to sign messages for the Robot Network.
@@ -52,9 +52,6 @@ Then we click "Add robot" to generate key and set info:
 
 
 **Save Private Key, it will be used to start agent on a device. If you have problem to select a text, try holding shift or option key**
-
-To publish config, you should firstly run agent(add new robot without publishing yet) on your machine and set path to socket(same folder as an agent by default).
-`export AGENT_SOCKET_PATH=rn.socket`
 
 After adding all robots, press key `p` or click on 'publish config' in footer
 
