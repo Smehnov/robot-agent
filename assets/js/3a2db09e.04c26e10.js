@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrn_website=self.webpackChunkrn_website||[]).push([[121],{8070:e=>{e.exports=JSON.parse('{"tags":[{"label":"Development","permalink":"/blog/tags/development","description":"Development tag description","count":2},{"label":"Agent","permalink":"/blog/tags/agent","description":"Agent tag description","count":2}]}')}}]);
